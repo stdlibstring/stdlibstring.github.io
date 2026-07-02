@@ -1,17 +1,17 @@
-site_name: 我的 CS 笔记
-site_url: https://你的GitHub用户名.github.io/
+site_name: lucas的 CS 笔记
+site_url: https://stdlibstring.github.io/
 
 theme:
   name: material
   language: zh
 
   icon:
-    logo: material/notebook-edit-outline
+    logo: material/code-tags
 
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue grey
+      primary: white
       accent: teal
       toggle:
         icon: material/weather-night
@@ -43,7 +43,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
-  
+
 plugins:
   - search
   - blog
