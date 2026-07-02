@@ -1,0 +1,20 @@
+.md-typeset {
+    font-size: 0.78rem;
+    line-height: 1.8;
+}
+
+.md-typeset h1 {
+    font-weight: 700;
+}
+
+.md-typeset h2 {
+    margin-top: 2.2em;
+}
+
+.md-typeset code {
+    border-radius: 4px;
+}
+
+.md-typeset pre>code {
+    font-size: 0.72rem;
+}

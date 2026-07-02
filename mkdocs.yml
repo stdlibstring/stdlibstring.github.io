@@ -4,14 +4,46 @@ site_url: https://你的GitHub用户名.github.io/
 theme:
   name: material
   language: zh
+
+  icon:
+    logo: material/notebook-edit-outline
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.indexes
     - navigation.top
-    - search.highlight
+    - navigation.tracking
+    - toc.follow
     - search.suggest
+    - search.highlight
     - content.code.copy
+    - content.tabs.link
 
+extra_css:
+  - stylesheets/extra.css
+  
 plugins:
   - search
   - blog
