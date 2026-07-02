@@ -1,17 +1,63 @@
-# Welcome to MkDocs
+# stdlibstring
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+你好，我是 stdlibstring，一名 CS 学生。这个网站用来长期记录我的开发环境配置、问题排查、课程学习、算法训练和技术文章。
 
-## Commands
+我希望这里不只是“写过的笔记”，而是一个可以反复回来查、持续变厚的个人知识库。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 最近关注
 
-## Project layout
+- WSL / Linux 开发环境
+- VS Code / Remote WSL / Codex
+- Web 开发
+- 算法与数据结构
+- 计算机网络、操作系统、数据库
+- 开发中遇到的问题与排查过程
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 内容入口
+
+| 板块 | 内容 |
+|---|---|
+| [博客](blog/) | 按时间记录学习、折腾和阶段性总结 |
+| [环境配置](env/wsl/) | WSL、Linux、VS Code 等开发环境笔记 |
+| [Web 开发](web/) | 前端、后端、工程化相关记录 |
+| [算法](algorithms/) | 算法题、数据结构、解题模板 |
+| [课程](courses/) | CS 课程学习笔记 |
+| [排错记录](troubleshooting/) | 真实问题、排查过程、解决方案和复盘 |
+| [标签](tags/) | 按关键词浏览内容 |
+
+## 我怎么写笔记
+
+每篇排错记录尽量保持这个结构：
+
+```text
+背景
+现象
+错误信息
+排查过程
+根因
+解决方案
+复盘
+参考资料
+```
+
+这样以后遇到类似问题时，不只是能找到命令，还能想起当时为什么这么做。
+
+## 最近文章
+
+可以从 [博客](blog/) 开始看，也可以直接用右上角搜索关键词，比如：
+
+```text
+WSL
+VS Code
+Linux
+GitHub Pages
+Codex
+DNS
+Debug
+```
+
+## 关于这个站点
+
+这个网站使用 Material for MkDocs 构建，托管在 GitHub Pages 上。  
+内容会随着我的学习和开发过程持续更新。
+
