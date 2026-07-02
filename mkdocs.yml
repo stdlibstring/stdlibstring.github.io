@@ -3,6 +3,7 @@ site_url: https://stdlibstring.github.io/
 
 theme:
   name: material
+  custom_dir: overrides
   language: zh
 
   icon:
