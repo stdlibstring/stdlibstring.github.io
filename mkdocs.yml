@@ -47,7 +47,12 @@ extra_css:
 
 plugins:
   - search
-  - blog
+  - blog:
+      archive_date_format: "yyyy年MM月"
+      archive_url_date_format: "yyyy/MM"
+      post_excerpt: required
+      post_excerpt_separator: "<!-- more -->"
+      pagination_per_page: 5
   - tags
 
 markdown_extensions:
