@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content="Renhao Li — Computer Science undergraduate at the University of Science and Technology of China."/>
+<title>Renhao Li</title>
+<script>
+try {
+  const savedTheme = localStorage.getItem('renhao-li-theme');
+  if (savedTheme === 'light' || savedTheme === 'dark') {
+    document.documentElement.dataset.theme = savedTheme;
+  }
+} catch (_) {}
+</script>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<main>
+<header>
+<div class="heading-row">
+<h1>Renhao Li</h1>
+<button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode"><span class="theme-toggle-icon" aria-hidden="true"></span></button>
+</div>
+<p class="subtitle">Undergraduate Student, Computer Science and Technology<br/>
+University of Science and Technology of China (USTC)</p>
+<p class="links"><a href="https://github.com/stdlibstring">GitHub</a><a href="mailto:lrh230689@mail.ustc.edu.cn">lrh230689@mail.ustc.edu.cn</a></p>
+</header>
+<hr/>
+<section aria-labelledby="about">
+<h2 id="about">About Me</h2>
+<p>I am a fourth-year undergraduate student in Computer Science at <a href="https://www.ustc.edu.cn/">USTC</a>, advised by <a href="https://zyuuuid.github.io/">Prof. Zhuolong Yu</a>. I will continue my graduate studies under his supervision.</p>
+<p>I am interested in LLM inference systems and GPU performance, particularly inference serving, KV-cache management, CUDA Graphs, and efficient attention.</p>
+</section>
+<section aria-labelledby="work">
+<h2 id="work">Selected Work</h2>
+<div class="entry">
+<div class="entry-heading">
+<h3><a href="https://github.com/vllm-project/vllm/pull/62709">vLLM — Version-aware documentation source links</a></h3>
+<span class="date">2026</span>
+</div>
+<p>Updated documentation links to point to the matching release or commit rather than always linking to <code>main</code>. <a href="https://github.com/vllm-project/vllm/pull/62709">PR #62709</a>, merged in October 2026.</p>
+</div>
+<div class="entry">
+<div class="entry-heading">
+<h3>Paged and sparse attention kernels on Ascend NPU</h3>
+</div>
+<p>Triton experiments with PagedAttention, grouped-query attention, KV-cache updates, and page-level sparse attention.</p>
+</div>
+</section>
+<section aria-labelledby="education">
+<h2 id="education">Education</h2>
+<div class="entry">
+<div class="entry-heading">
+<h3>University of Science and Technology of China</h3>
+<span class="date">2023 – Present</span>
+</div>
+<p>B.S. student in Computer Science and Technology.</p>
+</div>
+</section>
+</main>
+<script src="theme.js" defer></script>
+</body>
+</html>

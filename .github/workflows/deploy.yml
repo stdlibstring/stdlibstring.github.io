@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy personal homepage
 
 on:
   push:
@@ -18,33 +18,22 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-
     steps:
       - uses: actions/checkout@v6
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-          cache: pip
-
-      - run: pip install -r requirements.txt
-
-      - run: mkdocs build --strict
-
       - uses: actions/configure-pages@v5
-
+      - name: Prepare static site
+        run: |
+          mkdir -p _site
+          cp index.html style.css theme.js _site/
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: site
+          path: _site
 
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-24.04
     needs: build
-
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
