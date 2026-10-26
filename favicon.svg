@@ -29,5 +29,5 @@
     }
   </style>
   <rect class="card" x="7" y="7" width="50" height="50" rx="12" ry="12" />
-  <text class="letter" x="32" y="33">L</text>
+  <text class="letter" x="32" y="30">L</text>
 </svg>
