@@ -5,7 +5,7 @@
   --hover-link: #093d63;
   --text: #000;
   --secondary: #000;
-  --muted: #000;
+  --muted: #626262;
   --link: #155d90;
   --line: #e0e3e6;
 }
@@ -14,7 +14,7 @@
   --background: #141414;
   --text: #f5f5f5;
   --secondary: #f5f5f5;
-  --muted: #f5f5f5;
+  --muted: #b2b2b2;
   --link: #9acbff;
   --hover-link: #c5e3ff;
   --line: #414141;
@@ -25,7 +25,7 @@
     --background: #141414;
     --text: #f5f5f5;
     --secondary: #f5f5f5;
-    --muted: #f5f5f5;
+    --muted: #b2b2b2;
     --link: #9acbff;
     --hover-link: #c5e3ff;
     --line: #414141;
@@ -95,11 +95,20 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0 38px; }
 section + section { margin-top: 45px; }
 .entry { margin: 0 0 24px; }
 .entry:last-child { margin-bottom: 0; }
-.entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; }
 .entry-heading h3 { margin: 0; }
 .entry p { margin: 6px 0 0; font-size: 15px; line-height: 1.72; color: var(--secondary); }
+.entry .entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.76;
+}
 .date { color: var(--muted); font-size: 13.5px; white-space: nowrap; }
-.small { color: var(--secondary); font-size: 14px; }
+.repository-status { white-space: nowrap; }
 footer {
   margin-top: 56px;
   padding-top: 16px;
@@ -119,8 +128,6 @@ footer {
   h3 { font-size: 15.5px; }
   hr { margin: 28px 0 31px; }
   section + section { margin-top: 37px; }
-  .entry-heading { display: block; }
-  .date { display: block; margin: 3px 0 0; }
   .entry p { margin-top: 6px; }
   .note-list time { display: block; }
   footer { margin-top: 44px; }
